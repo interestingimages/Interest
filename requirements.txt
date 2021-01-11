@@ -1,0 +1,5 @@
+iicategen==2.2.0
+pyrogram==1.1.9
+semver==2.13.0
+TgCrypto==1.2.2
+aiofiles==0.6.0

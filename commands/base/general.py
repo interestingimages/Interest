@@ -1,14 +1,14 @@
 import platform
 
 
-def start() -> str:
+async def start() -> str:
     return "Use /help for a list of commands!"
 
 
-def info() -> str:
+async def info(version) -> str:
     add = " (Python)" if platform.python_implementation() != "CPython" else ""
     return (
-        "**Interest**\n"
+        f"**Interest** version {version}\n"
         "by @biconcavedskull\n"
         "\n"
         f"**Server**: {platform.system()} {platform.release()} "
